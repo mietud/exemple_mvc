@@ -1,4 +1,8 @@
 <?php
+Namespace Misa\Mvc\Models;
+
+use PDO;
+
 class UserModel{
     private $pdo;
 
@@ -14,7 +18,7 @@ class UserModel{
             $this->pdo = new PDO("mysql:host=$host;dbname=$db", $user, $pass);
             $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             
-        } catch (PDOException $e) {
+        } catch (\PDOException $e) {
             echo "Connection failed: " . $e->getMessage();
             exit;
         }

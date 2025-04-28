@@ -1,0 +1,17 @@
+{
+    "name": "misa/mvc",
+    "autoload": {
+        "psr-4": {
+            "Misa\\Mvc\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mietud",
+            "email": "randrianasolo.misaela.edu@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/var-dumper": "^7.2"
+    }
+}

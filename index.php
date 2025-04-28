@@ -1,9 +1,8 @@
 <?php
 require_once "./config/database.php";
-require_once "./app/models/UserModel.php";
-require_once "./app/controllers/UserController.php";
+require __DIR__ . '/vendor/autoload.php';
 
-
+use Misa\Mvc\Controllers\UserController;
 
 $controller = new UserController();
 echo $controller->index();
